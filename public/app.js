@@ -18,8 +18,20 @@ Add = () => {
 
     Customers.forEach(customer => {
         ListAttri = document.createElement('li');
-        ListAttri.innerHTML = (`Name: ${customer.Name} |  Phone Nr: ${customer.PhoneNumber} |  Adress: ${customer.Adress}`);
+        ListAttri.innerHTML = (`Customer: - Name: ${customer.Name} | Phone Nr: ${customer.PhoneNumber}`);
         CustomerList.appendChild(ListAttri);
     });
     CustomerList.appendChild(ListAttri);
 };
+
+Search = () => {
+    var InputId = document.getElementById('InputId').value;
+
+    var OutputId = document.getElementById('OutputId');
+
+    InputId -= 1;
+
+    OutputId.innerHTML = Customers[InputId];
+    
+
+}
