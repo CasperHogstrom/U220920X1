@@ -31,7 +31,5 @@ Search = () => {
 
     InputId -= 1;
 
-    OutputId.innerHTML = Customers[InputId];
-    
-
-}
+    OutputId.innerHTML = (JSON.stringify(Customers[InputId]));
+};
