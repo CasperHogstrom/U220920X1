@@ -51,7 +51,10 @@ Search = () => {
         return person.Email === InputId
     });
     
-    OutputId.innerHTML = (JSON.stringify(Customers.find(findEmail)));
+    OutputId.innerHTML = (`Name: ${Customers.find(findEmail).Name}, Phone Number: ${Customers.find(findEmail).PhoneNumber}, 
+    Adress: ${Customers.find(findEmail).Adress}, Email: ${Customers.find(findEmail).Email}`);
 
-    console.log(Customers.find(findEmail));
+    //OutputId.innerHTML = (JSON.stringify(Customers.find(findEmail)));
+
+    //console.log(Customers.find(findEmail);
 };
