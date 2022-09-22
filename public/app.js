@@ -21,10 +21,10 @@ Add = () => {
 
     Customers.forEach(customer => {
         ListAttri = document.createElement('li');
-        ListAttri.innerHTML = (`Customer: - Name: ${customer.Name} | Phone Nr: ${customer.PhoneNumber}`);
+        ListAttri.innerHTML = (`Customer: - Name: ${customer.Name} | Phone Nr: ${customer.PhoneNumber} | Email: ${customer.Email}`);
         CustomerList.appendChild(ListAttri);
     });
-    CustomerList.appendChild(ListAttri);
+    //CustomerList.appendChild(ListAttri);
 
     document.getElementById('inputName').value = '';
     document.getElementById('inputPhoneNr').value = '';
@@ -47,7 +47,11 @@ Search = () => {
 
     var OutputId = document.getElementById('OutputId');
 
-    InputId -= 1;
+    findEmail = (person => {
+        return person.Email === InputId
+    });
+    
+    OutputId.innerHTML = (JSON.stringify(Customers.find(findEmail)));
 
-    OutputId.innerHTML = (JSON.stringify(Customers[InputId]));
+    console.log(Customers.find(findEmail));
 };
