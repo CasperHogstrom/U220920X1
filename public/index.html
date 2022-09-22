@@ -11,17 +11,18 @@
 <body>
 
     <div>
-        <input type="text" name="inputName" id="inputName">
-        <input type="number" name="inputPhoneNr" id="inputPhoneNr">
-        <input type="text" name="inputAdr" id="inputAdr">
+        <input type="text" name="inputName" id="inputName" placeholder="Full Name">
+        <input type="number" name="inputPhoneNr" id="inputPhoneNr" placeholder="Phone Number">
+        <input type="text" name="inputAdr" id="inputAdr" placeholder="Adress">
+        <input type="text" name="inputEmail" id="inputEmail" placeholder="Email">
         <button onclick="Add()">Add</button>
         <button class="right" onclick="Search()">Search id</button>
-        <input type="number" name="InputId" id="InputId" class="right">
+        <input type="number" name="InputId" id="InputId" placeholder="Id to search in list" class="right">
         <br>
         <p id="OutputId" class="right"></p>
     </div>
 
-    <div>
+    <div id="left">
         <ul id="customerul">
 
         </ul>

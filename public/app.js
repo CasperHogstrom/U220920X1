@@ -2,15 +2,18 @@ var Customers = [];
 var Person = {
     Name: '',
     PhoneNumber: '',
-    Adress: ''
+    Adress: '',
+    Email: ''
 };
 
 Add = () => {
     FullName = document.getElementById('inputName').value;
     PhoneNr = document.getElementById('inputPhoneNr').value;
     RecAdress = document.getElementById('inputAdr').value;
+    CustEmail = document.getElementById('inputEmail').value;
 
-    Person = {Name: FullName, PhoneNumber: PhoneNr, Adress: RecAdress}
+
+    Person = {Name: FullName, PhoneNumber: PhoneNr, Adress: RecAdress, Email: CustEmail}
     Customers.push(Person);
 
     var CustomerList = document.getElementById('customerul');
@@ -22,6 +25,11 @@ Add = () => {
         CustomerList.appendChild(ListAttri);
     });
     CustomerList.appendChild(ListAttri);
+
+    document.getElementById('inputName').value = '';
+    document.getElementById('inputPhoneNr').value = '';
+    document.getElementById('inputAdr').value = '';
+    document.getElementById('inputEmail').value = '';
 };
 
 Search = () => {
