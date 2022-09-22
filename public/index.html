@@ -16,18 +16,20 @@
         <input type="text" name="inputAdr" id="inputAdr" placeholder="Adress">
         <input type="text" name="inputEmail" id="inputEmail" placeholder="Email">
         <button onclick="Add()">Add</button>
+        <button id='HSBtn' onclick="ShowList()">Show/Hide list</button>
         <button class="right" onclick="Search()">Search id</button>
         <input type="number" name="InputId" id="InputId" placeholder="Id to search in list" class="right">
         <br>
         <p id="OutputId" class="right"></p>
     </div>
 
-    <div id="left">
-        <ul id="customerul">
+    <div id="left" >
+        <div id="uldiv"> 
+            <ul id="customerul" >
 
-        </ul>
-        <br>
-        
+            </ul>
+            <br>
+        </div>
     </div>
     
 </body>

@@ -32,6 +32,16 @@ Add = () => {
     document.getElementById('inputEmail').value = '';
 };
 
+ShowList = () => {
+    const CustomerUlDiv = document.getElementById('left');
+    var HSBtn =  document.getElementById('HSBtn');
+    var UlDiv = document.getElementById('uldiv');
+    
+    HSBtn.onclick = () => UlDiv.hidden = !UlDiv.hidden;
+    CustomerUlDiv.appendChild(UlDiv);
+}
+
+
 Search = () => {
     var InputId = document.getElementById('InputId').value;
 
