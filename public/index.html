@@ -11,12 +11,14 @@
 <body>
 
     <div>
-        <input type="text" name="inputName" id="inputName" placeholder="Full Name">
-        <input type="number" name="inputPhoneNr" id="inputPhoneNr" placeholder="Phone Number">
-        <input type="text" name="inputAdr" id="inputAdr" placeholder="Adress">
-        <input type="text" name="inputEmail" id="inputEmail" placeholder="Email">
-        <button onclick="Add()">Add</button>
-        <button id='HSBtn' onclick="ShowList()">Show/Hide list</button>
+        <div class="left">
+            <input type="text" name="inputName" id="inputName" placeholder="Full Name">
+            <input type="number" name="inputPhoneNr" id="inputPhoneNr" placeholder="Phone Number">
+            <input type="text" name="inputAdr" id="inputAdr" placeholder="Adress">
+            <input type="text" name="inputEmail" id="inputEmail" placeholder="Email">
+            <button onclick="Add()">Add</button>
+            <button id='HSBtn' onclick="ShowList()">Show/Hide list</button>
+        </div>
         <div class="right" id="rightdiv">
             <button class="right" onclick="Search()">Search id</button>
             <input type="text" name="InputId" id="InputId" placeholder="Id to search in list" class="right">

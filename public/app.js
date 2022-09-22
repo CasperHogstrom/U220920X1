@@ -51,6 +51,7 @@ Search = () => {
         return person.Email === InputId
     });
     
+    OutputId.innerHTML = '';
     OutputId.innerHTML = (`Name: ${Customers.find(findEmail).Name}, Phone Number: ${Customers.find(findEmail).PhoneNumber}, 
     Adress: ${Customers.find(findEmail).Adress}, Email: ${Customers.find(findEmail).Email}`);
 

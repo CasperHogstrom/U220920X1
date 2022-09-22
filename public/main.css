@@ -2,10 +2,17 @@
     float: right;
 }
 
-#left {
-    margin-right: 10%;
+.left {
+    width: 50%;
+    float: left;
 }
 
 #rightdiv {
     width: 50%;
+}
+
+#OutputId {
+    float: right;
+    border: 1px;
+    border-color: black;
 }
